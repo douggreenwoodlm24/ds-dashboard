@@ -1,0 +1,7 @@
+{
+        "title": "Year on year sales comparison (£000)",
+        "series01Label": "2016",
+        "series01Data":  [60,50,70,40,95,60,70,60,90,80,70,100],
+        "series02Label": "2017",
+        "series02Data":  [65,50,75,35,100,70,65,55,90,0,0,0]
+    }

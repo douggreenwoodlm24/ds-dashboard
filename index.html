@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/img/ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>SecureSelect - Dashboard</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="vendor/bootstrap/css/bootstrap-slider.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- Plugin CSS -->
+        <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/sb-admin.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/ss-main.css" />
+        <link rel="stylesheet" href="css/ss-responsive.css" />
+
+    </head>
+
+    <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="logo-dataselect-container"><a class="navbar-brand" href="index.html"><img src="img/logo-dataselect.png" alt="Data Select" id="logo-ds" /></a></div>
+            <!-- RESPONSIVE SEARCH /start -->
+            <!--            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive-search" aria-controls="navbarResponsive-search" aria-expanded="false" aria-label="Toggle search">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse  ss-hide-lg ss-hide-md " id="navbarResponsive-search">
+                            Responsive search
+                        </div>-->
+
+            
+
+            <!-- RESPONSIVE SEARCH /end -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav-leftitems">
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0 mr-lg-2">
+                            <div class="input-group nav-search-container">
+                                <input type="text" class="form-control ss-main-search" placeholder="Search">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-light btn-icon-gray" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                        <a class="nav-link" href="index.html">
+                            <!--                            <i class="fa fa-fw fa-dashboard"></i>-->
+                            <span class="nav-link-text">
+                                Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Catalogue">
+                        <a class="nav-link" href="productListing.html">
+                            <!--                            <i class="fa fa-fw fa-dashboard"></i>-->
+                            <span class="nav-link-text">
+                                Catalogue</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Services">
+                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                            <!--                            <i class="fa fa-fw fa-wrench"></i>-->
+                            <span class="nav-link-text">
+                                Services</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapseComponents">
+                            <li>
+                                <a href="#">Knox</a>
+                            </li>
+                            <li>
+                                <a href="#">Trade-in</a>
+                            </li>
+                            <li>
+                                <a href="#">Insurance</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Stock Feed">
+                        <a class="nav-link" href="#">
+                            <!--                            <i class="fa fa-fw fa-area-chart"></i>-->
+                            <span class="nav-link-text">
+                                Stock Feed</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item nav-border-bottom" data-toggle="tooltip" data-placement="right" title="Example Pages">
+                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+                            <!--                            <i class="fa fa-fw fa-file"></i>-->
+                            <span class="nav-link-text">
+                                Self Service</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+                            <li>
+                                <a href="#">IMEI Report</a>
+                            </li>
+                            <li>
+                                <a href="#">Validate IMEIs</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Second nav items -->
+                    <li class="nav-item " data-toggle="tooltip" data-placement="right" title="Place Order">
+                        <div class="nav-link-title">
+                            <span class="nav-link-text ">
+                                ORDERS</span>
+                        </div>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Place Order">
+                        <a class="nav-link ss-icon-circle ss-icon-circle-green" href="productListing.html">
+                            <span class="nav-link-text">
+                                Place Order</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="View Order Status">
+                        <a class="nav-link ss-icon-circle ss-icon-circle-amber" href="#">
+                            <span class="nav-link-text">
+                                View Order Status</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-border-bottom-sm" data-toggle="tooltip" data-placement="right" title="Past Orders">
+                        <a class="nav-link ss-icon-circle ss-icon-circle-blue" href="#">
+                            <span class="nav-link-text">
+                                Past Orders</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="Place Order">
+                        <div class="nav-link-title">
+                            <span class="nav-link-text ">
+                                You are logged in as Marios Ktisti.</span>
+                        </div>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="Add Users">
+                        <a class="nav-link" href="#">
+                            <span class="nav-link-text">
+                                Add Users</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="List Users">
+                        <a class="nav-link" href="#">
+                            <span class="nav-link-text">
+                                List Users</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="Edit Companies">
+                        <a class="nav-link" href="#">
+                            <span class="nav-link-text">
+                                Edit Companies</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="Log Out">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                            <span class="nav-link-text">
+                                <i class="fa fa-fw fa-sign-out"></i>
+                                Log Out
+                            </span>
+                        </a>
+                    </li>
+
+
+                </ul>
+                <!--                <ul class="navbar-nav sidenav-toggler">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center" id="sidenavToggler">
+                                            <i class="fa fa-fw fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                </ul>-->
+                
+                <ul class="navbar-nav ml-auto ss-nav-right-area ss-hide-xs ss-hide-sm">
+                    <li class="nav-item nav-view-basket-container ">
+                        <a href="#"><img src="img/ico-placeorder-sm.png" alt="View Basket" class="nav-view-basket" /></a>
+                    </li>
+                    <li class="nav-item logo-secureselect-container ">
+                        <img src="img/logo-secureselect.png" alt="Data Select" id="logo-ss" />
+                    </li>
+                    <li class="nav-item dropdown ss-user-area" id="ss-nav-user-options">
+                        <a class="nav-link dropdown-toggle mr-lg-2 ss-user-area-link" href="#" id="messagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="nav-user-left">
+                                <div class="ss-icon-userimage">
+                                </div>
+                            </div>
+                            <!--                            <div class="nav-user-right">-->
+                            <span class="ss-user-name">Marios Ktisti </span><br />
+                            <span class="text-small">Admin</span>
+                            <!--                            <span class="d-lg-none">Messages
+                                                            <span class="badge badge-pill badge-primary">12 New</span>
+                                                        </span>-->
+                            <!--</div>-->
+                        </a>
+                        <div class="dropdown-menu ss-user-dropdown" aria-labelledby="messagesDropdown">
+                            <!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" href="#">
+                                <span>Add Users</span>
+                            </a>
+                            <!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" href="#">
+                                <span>List Users</span>
+                            </a>
+                            <!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" href="#">
+                                <span>Edit Companies</span>
+                            </a>
+                            <!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal">
+                                <i class="fa fa-fw fa-sign-out"></i>
+                                Log Out</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <!-- Breadcrumbs -->
+                <div class="row "><!-- removed: row-padding-none -->
+                    <div class="col-sm-12">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item  active">
+                                DASHBOARD
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- Icon Cards -->
+                <div class="row row-padding-none">
+                    <div class="col-sm-12">
+
+                        <div class="square-area-container">
+                            <div class="square-box">
+                                <div class="square-content bg-blue">
+                                    <div>
+                                        <span class="align-topleft font-lg">Welcome<br />back <strong>Marios</strong>.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="square-box">
+                                <div class="square-content" id="bg-availableCredit">
+                                    <div>
+                                        <span>Available Credit<br class="br-height-xl" /><strong class="credit-amount" id="availableCredit">&pound;<i></i></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="square-box">
+                                <a href="#">
+                                    <div class="square-content bg-darkgray">
+                                        <div>
+                                            <span><img src="img/ico-trackorder.png" alt="Track Order" class="square-icon" /><br />Track Order</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="square-box">
+                                <a href="productListing.html">
+                                    <div class="square-content bg-darkgray">
+                                        <div>
+                                            <span><img src="img/ico-placeorder.png" alt="Place Order" class="square-icon"/><br />Place Order</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="square-area-container">
+                            <div class="rectangle-2x1-box">
+                                <div class="rectangle-2x1-content bg-black">
+                                    <div class="rectangle-2x1-innercontent">
+                                        <span><a href="#"><img src="img/promos/promo-2x1-01.jpg" alt="" class="promo-2x1"/></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rectangle-2x1-box">
+                                <div class="rectangle-2x1-content bg-white">
+                                    <canvas id="chart-area" ></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="square-area-container">
+                            <div class="rectangle-2x1-box">
+                                <div class="rectangle-2x1-content rectangle-2x1-content-graph bg-white">
+                                    <canvas id="canvas"></canvas>
+                                </div>
+                            </div>
+                            <div class="square-box">
+                                <a href="#">
+                                    <div class="square-content bg-darkgray">
+                                        <div>
+                                            <span class="line-normal"><img src="img/ico-vieworderstatus.png" alt="View Order Status" class="square-icon" /><br />View Order Status</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="square-box">
+                                <div class="square-content bg-white">
+                                    <div>
+                                        <span><a href="#"><img src="img/promos/promo-1x1-01.jpg" alt="Promo" class="promo-1x1" /></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="square-area-container">
+                            <div class="square-box">
+                                <div class="square-content bg-white">
+                                    <div>
+                                        <span><a href="#"><img src="img/promos/promo-1x1-04.jpg" alt="Promo" class="promo-1x1"/></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="square-box">
+                                <div class="square-content bg-black">
+                                    <div>
+                                        <span><a href="productDetail-02-samsungGalaxy-s8.html"><img src="img/promos/promo-1x1-02.jpg" alt="Promo" class="promo-1x1"/></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rectangle-2x1-box">
+                                <div class="rectangle-2x1-content bg-white">
+                                    <div class="rectangle-2x1-innercontent">
+                                        <span><a href="productDetail-05-htc-u11.html"><img src="img/promos/promo-2x1-02.jpg" alt="" class="promo-2x1"/></a></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <footer class="sticky-footer">
+            <div class="container">
+                <div class="text-center">
+                    <small>Copyright &copy; Data Select.</small>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
+        <!-- Logout Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Select "Logout" below if you are ready to end your current session.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="login.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+        <div class="mediaCheck"></div><!-- checks device size for jquery -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/popper/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap-slider.min.js"></script>
+        <script src="vendor/lightslider/js/lightslider.min.js"></script>
+
+        <!-- SS charts -->
+        <script src="vendor/ss-chart.js/dist/Chart.bundle.js"></script>
+        <script src="vendor/ss-chart.js/utils.js"></script>
+<!--        <script src="js/ss-chart-pie.js"></script>-->
+        <script src="js/ss-chart-pie-bar.js"></script>
+        
+        
+        
+        <!-- Plugin JavaScript -->
+        
+        
+        
+        
+<!--        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendor/chart.js/Chart.min.js"></script>
+        <script src="vendor/datatables/jquery.dataTables.js"></script>
+        <script src="vendor/datatables/dataTables.bootstrap4.js"></script>-->
+
+        <!-- Custom scripts for this template -->
+<!--        <script src="js/sb-admin.min.js"></script>-->
+        <script src="js/ss-main.js"></script>
+    </body>
+
+</html>

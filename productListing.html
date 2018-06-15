@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/img/ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>SecureSelect - Product Listing</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="vendor/bootstrap/css/bootstrap-slider.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- Plugin CSS -->
+        <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/sb-admin.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/ss-main.css" />
+        <link rel="stylesheet" href="css/ss-responsive.css" />
+
+    </head>
+
+    <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="logo-dataselect-container"><a class="navbar-brand" href="index.html"><img src="img/logo-dataselect.png" alt="Data Select" id="logo-ds" /></a></div>
+            <!-- RESPONSIVE SEARCH /start -->
+            <!--            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive-search" aria-controls="navbarResponsive-search" aria-expanded="false" aria-label="Toggle search">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse  ss-hide-lg ss-hide-md " id="navbarResponsive-search">
+                            Responsive search
+                        </div>-->
+
+            
+
+            <!-- RESPONSIVE SEARCH /end -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav-leftitems">
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0 mr-lg-2">
+                            <div class="input-group nav-search-container">
+                                <input type="text" class="form-control ss-main-search" placeholder="Search">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-light btn-icon-gray" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                        <a class="nav-link" href="index.html">
+                            <!--                            <i class="fa fa-fw fa-dashboard"></i>-->
+                            <span class="nav-link-text">
+                                Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Catalogue">
+                        <a class="nav-link" href="productListing.html">
+                            <!--                            <i class="fa fa-fw fa-dashboard"></i>-->
+                            <span class="nav-link-text">
+                                Catalogue</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Services">
+                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                            <!--                            <i class="fa fa-fw fa-wrench"></i>-->
+                            <span class="nav-link-text">
+                                Services</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapseComponents">
+                            <li>
+                                <a href="#">Knox</a>
+                            </li>
+                            <li>
+                                <a href="#">Trade-in</a>
+                            </li>
+                            <li>
+                                <a href="#">Insurance</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Stock Feed">
+                        <a class="nav-link" href="#">
+                            <!--                            <i class="fa fa-fw fa-area-chart"></i>-->
+                            <span class="nav-link-text">
+                                Stock Feed</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item nav-border-bottom" data-toggle="tooltip" data-placement="right" title="Example Pages">
+                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+                            <!--                            <i class="fa fa-fw fa-file"></i>-->
+                            <span class="nav-link-text">
+                                Self Service</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+                            <li>
+                                <a href="#">IMEI Report</a>
+                            </li>
+                            <li>
+                                <a href="#">Validate IMEIs</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Second nav items -->
+                    <li class="nav-item " data-toggle="tooltip" data-placement="right" title="Place Order">
+                        <div class="nav-link-title">
+                            <span class="nav-link-text ">
+                                ORDERS</span>
+                        </div>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Place Order">
+                        <a class="nav-link ss-icon-circle ss-icon-circle-green" href="#">
+                            <span class="nav-link-text">
+                                Place Order</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="View Order Status">
+                        <a class="nav-link ss-icon-circle ss-icon-circle-amber" href="#">
+                            <span class="nav-link-text">
+                                View Order Status</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-border-bottom-sm" data-toggle="tooltip" data-placement="right" title="Past Orders">
+                        <a class="nav-link ss-icon-circle ss-icon-circle-blue" href="#">
+                            <span class="nav-link-text">
+                                Past Orders</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="Place Order">
+                        <div class="nav-link-title">
+                            <span class="nav-link-text ">
+                                You are logged in as Marios Ktisti.</span>
+                        </div>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="Add Users">
+                        <a class="nav-link" href="#">
+                            <span class="nav-link-text">
+                                Add Users</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="List Users">
+                        <a class="nav-link" href="#">
+                            <span class="nav-link-text">
+                                List Users</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="Edit Companies">
+                        <a class="nav-link" href="#">
+                            <span class="nav-link-text">
+                                Edit Companies</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="Log Out">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                            <span class="nav-link-text">
+                                <i class="fa fa-fw fa-sign-out"></i>
+                                Log Out
+                            </span>
+                        </a>
+                    </li>
+
+
+                </ul>
+                <!--                <ul class="navbar-nav sidenav-toggler">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center" id="sidenavToggler">
+                                            <i class="fa fa-fw fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                </ul>-->
+                
+                <ul class="navbar-nav ml-auto ss-nav-right-area ss-hide-xs ss-hide-sm">
+                    <li class="nav-item nav-view-basket-container ">
+                        <a href="#"><img src="img/ico-placeorder-sm.png" alt="View Basket" class="nav-view-basket" /></a>
+                    </li>
+                    <li class="nav-item logo-secureselect-container ">
+                        <img src="img/logo-secureselect.png" alt="Data Select" id="logo-ss" />
+                    </li>
+                    <li class="nav-item dropdown ss-user-area" id="ss-nav-user-options">
+                        <a class="nav-link dropdown-toggle mr-lg-2 ss-user-area-link" href="#" id="messagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="nav-user-left">
+                                <div class="ss-icon-userimage">
+                                </div>
+                            </div>
+                            <!--                            <div class="nav-user-right">-->
+                            <span class="ss-user-name">Marios Ktisti </span><br />
+                            <span class="text-small">Admin</span>
+                            <!--                            <span class="d-lg-none">Messages
+                                                            <span class="badge badge-pill badge-primary">12 New</span>
+                                                        </span>-->
+                            <!--</div>-->
+                        </a>
+                        <div class="dropdown-menu ss-user-dropdown" aria-labelledby="messagesDropdown">
+                            <!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" href="#">
+                                <span>Add Users</span>
+                            </a>
+                            <!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" href="#">
+                                <span>List Users</span>
+                            </a>
+                            <!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" href="#">
+                                <span>Edit Companies</span>
+                            </a>
+                            <!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal">
+                                <i class="fa fa-fw fa-sign-out"></i>
+                                Log Out</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="content-wrapper">
+            <div class="container-fluid container-fluid-bootstrap">
+                <!-- Breadcrumbs -->
+                <div class="row ">
+                    <div class="col-sm-12">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">DASHBOARD</a>
+                            </li>
+                            <li class="breadcrumb-item active">CATALOGUE</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-12">
+                        <div class="ss-filters">
+                            <div class="row ">
+                                <div class="col-sm-12 ss-filter-item">
+                                    <label for="ss-filtersearch">Quick Search</label>
+                                    <form class="form-inline my-2 my-lg-0 mr-lg-2">
+                                        <div class="input-group ss-filters-search-input-group">
+                                            <input type="text" class="form-control ss-filters-search" placeholder="Search">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-light btn-icon-gray" type="button">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6 col-lg-3 ss-filter-item">
+                                    <div class="form-group">
+                                        <label for="ss-filterbybrand">Filter by brand</label>
+                                        <select class="form-control" id="ss-filterbybrand">
+                                            <option>All</option>
+                                            <option>Acer</option>
+                                            <option>Alcatel</option>
+                                            <option>Apple</option>
+                                            <option>BlackBerry</option>
+                                            <option>Caterpillar</option>
+                                            <option>Doro</option>
+                                            <option>HTC</option>
+                                            <option>Huawei</option>
+                                            <option>JCB</option>
+                                            <option>LG</option>
+                                            <option>Microsoft</option>
+                                            <option>Motorola</option>
+                                            <option>Nokia</option>
+                                            <option>Samsung</option>
+                                            <option>Sony</option>
+                                            <option>Vodafone</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3 ss-filter-item">
+                                    <div class="form-group">
+                                        <label for="ss-filterbycategory">Filter by category</label>
+                                        <select class="form-control" id="ss-filterbycategory">
+                                            <option>Smartphone</option>
+                                            <option>Featurephone</option>
+                                            <option>Tablet</option>
+                                            <option>Accessories</option>
+                                            <option>Drones</option>
+                                            <option>Wearables</option>
+                                            <option>VR</option>
+                                            <option>Mobile Broadband</option>
+                                            <option>MDM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-push-3 col-lg-6 ss-filter-item">
+                                    <label for="ss-filterbyprice">Filter by price</label>
+                                    <br class="clear-both" />
+                                    <div class="ss-filterbyprice-container">
+                                        <b>£ 0</b><input id="ss-filterbyprice" type="text" class="span2" value="" data-slider-min="0" data-slider-max="1000" data-slider-step="5" data-slider-value="[0,1000]"/> <b>£ 1000</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Icon Cards -->
+                
+                <div class="row row-margin-bootstrap">
+                     <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="productDetail-03-samsunggalaxy-note8.html"><img src="img/products/03-samsunggalaxy-note8-sm.jpg" alt="Samsung Galaxy Note8" class="pl-item-image" /></a>
+                            <h3><a href="productDetail-03-samsunggalaxy-note8.html">Samsung Galaxy Note8</a></h3>
+<!--                            <h4>Black</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£720.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="productDetail-03-samsunggalaxy-note8.html" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £7.99/month For finance</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="productDetail-04-alcatel.html"><img src="img/products/04-alcatel-us-sm.jpg" alt="Alcatel U5" class="pl-item-image" /></a>
+                            <h3><a href="productDetail-04-alcatel.html">Alcatel U5</a></h3>
+<!--                            <h4>TBC</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£68.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="productDetail-04-alcatel.html" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £3.99/month For finance</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="productDetail-05-htc-u11.html"><img src="img/products/05-htc-u11-sm.jpg" alt="HTC U11" class="pl-item-image" /></a>
+                            <h3><a href="productDetail-05-htc-u11.html">HTC U11</a></h3>
+<!--                            <h4>64GB Black</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£476.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="productDetail-05-htc-u11.html" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £7.99/month For finance</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="productDetail-06-caterpillar-s41.html"><img src="img/products/06-caterpillar-s41-sm.jpg" alt="Caterpillar S41" class="pl-item-image" /></a>
+                            <h3><a href="productDetail-06-caterpillar-s41.html">Cat S41</a></h3>
+<!--                            <h4>Black</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£316.48</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="productDetail-06-caterpillar-s41.html" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £5.99/month For finance</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="productDetail-02-samsungGalaxy-s8.html"><img src="img/products/02-samsunggalaxy-s8-sm.jpg" alt="Samsung Galaxy S8 Plus" class="pl-item-image" /></a>
+                            <h3><a href="productDetail-02-samsungGalaxy-s8.html">Samsung Galaxy S8</a></h3>
+<!--                            <h4>64GB Midnight Blk</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£606.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="productDetail-02-samsungGalaxy-s8.html" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £7.99/month For finance</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="productDetail-01-samsungGalaxy-j3.html"><img src="img/products/01-samsunggalaxy-j3-sm.jpg" alt="Samsung Galaxy J3" class="pl-item-image" /></a>
+                            <h3><a href="productDetail-01-samsungGalaxy-j3.html">Samsung Galaxy J3</a></h3>
+<!--                            <h4>16GB Black</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£153.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="productDetail-01-samsungGalaxy-j3.html" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £5.99/month For finance</a></p>
+                        </div>
+                    </div>
+                   
+                    
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="#"><img src="img/products/07-alcatel-1016-sm.jpg" alt="Alcatel A5" class="pl-item-image" /></a>
+                            <h3><a href="#">Alcatel 1016</a></h3>
+<!--                            <h4>&nbsp;</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£12.60</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="#" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="#"><img src="img/products/08-alcatel-a5-sm.jpg" alt="Product name" class="pl-item-image" /></a>
+                            <h3><a href="#">Alcatel A5</a></h3>
+<!--                            <h4>64GB Blue</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£125.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="#" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £5.99/month For finance</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="#"><img src="img/products/09-caterpillar-s31-sm.jpg" alt="Cat S31" class="pl-item-image" /></a>
+                            <h3><a href="#">Cat S31</a></h3>
+<!--                            <h4>&nbsp;</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£249.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="#" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £5.99/month For finance</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="#"><img src="img/products/10-caterpillar-s60-sm.jpg" alt="Cat S60" class="pl-item-image" /></a>
+                            <h3><a href="#">Cat S60</a></h3>
+<!--                            <h4>&nbsp;</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£425.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="#" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £7.99/month For finance</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="#"><img src="img/products/11-htc-uplay-sm.jpg" alt="HTC U Play" class="pl-item-image" /></a>
+                            <h3><a href="#">HTC U Play</a></h3>
+<!--                            <h4>&nbsp;</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£304.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="#" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £5.99/month For finance</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="#"><img src="img/products/12-htc-650-sm.jpg" alt="HTC Desire 650" class="pl-item-image" /></a>
+                            <h3><a href="#">HTC Desire 650</a></h3>
+<!--                            <h4>&nbsp;</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£135.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="#" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £5.99/month For finance</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="#"><img src="img/products/13-alcatel-a3-sm.jpg" alt="Alcatel A3" class="pl-item-image" /></a>
+                            <h3><a href="#">Alcatel A3</a></h3>
+<!--                            <h4>&nbsp;</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£91.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="#" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £3.99/month For finance</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="#"><img src="img/products/14-samsung-a5-sm.jpg" alt="Samsung A5" class="pl-item-image" /></a>
+                            <h3><a href="#">Samsung A5</a></h3>
+<!--                            <h4>&nbsp;</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£289.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="#" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £5.99/month For finance</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="#"><img src="img/products/15-htc-10-sm.jpg" alt="HTC 10" class="pl-item-image" /></a>
+                            <h3><a href="#">HTC 10</a></h3>
+<!--                            <h4>&nbsp;</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£398.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="#" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £5.99/month For finance</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="pl-item">
+                            <a href="#"><img src="img/products/16-caterpillar-s30-sm.jpg" alt="Caterpillar S30" class="pl-item-image" /></a>
+                            <h3><a href="#">Caterpillar S30</a></h3>
+<!--                            <h4>&nbsp;</h4>-->
+                            <div class="col-holder">
+                                <div class="pl-col-left">
+                                    <p class="pl-price">£161.00</p>
+                                    <p class="pl-stock in-stock">In stock</p>
+                                </div>
+                                <div class="pl-col-right">
+                                    <a href="#" class="btn btn-info btn-blue" role="button"><img src="img/ico-details-sm.png" alt="View details" class="btn-icon" /></a>
+                                    <a href="#" class="btn btn-info btn-green" role="button"><img src="img/ico-placeorder-sm.png" alt="Add to basket" class="btn-icon" /></a>
+                                </div>
+                            </div>
+                            <br class="clear-both" />
+                            <p class="pl-details"><a href="#" class="underline">Insurance: From £5.99/month For finance</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <footer class="sticky-footer">
+            <div class="container">
+                <div class="text-center">
+                    <small>Copyright &copy; Data Select.</small>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
+        <!-- Logout Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Select "Logout" below if you are ready to end your current session.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="login.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+        <div class="mediaCheck"></div><!-- checks device size for jquery -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap-slider.min.js"></script>
+    <script src="vendor/lightslider/js/lightslider.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+<!--        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendor/chart.js/Chart.min.js"></script>
+        <script src="vendor/datatables/jquery.dataTables.js"></script>
+        <script src="vendor/datatables/dataTables.bootstrap4.js"></script>-->
+
+        <!-- Custom scripts for this template -->
+<!--        <script src="js/sb-admin.min.js"></script>-->
+        <script src="js/ss-main.js"></script>
+    </body>
+
+</html>

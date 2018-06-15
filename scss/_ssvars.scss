@@ -1,0 +1,26 @@
+/* LOCALISED $ VARS */
+/* colours */
+$-ss-blue: #009fe3; // Blue (header/logo bg)
+$-ss-bluegray: #d3ddec; // V light blue/gray (e.g. page background)
+$-ss-lightgray: #91918e; // Light gray text
+$-ss-vlightgray: #dadada; // V light gray line
+$-ss-grayfordarkbg: #817f82; // gray lines on dark gray background
+$-ss-darkgray: #575756; // D gray (default text, header bg)
+$-ss-green: #97bc2d; // Green
+$-ss-yellow: #fcb739; // Dull Yellow
+$-ss-red: #d2232a;
+$-ss-amber: #ffae00;
+
+
+/* distances */
+$-ss-space-xs: 10px;
+$-ss-space-sm: 20px;
+$-ss-space-md: ($-ss-space-sm)*2;
+$-ss-space-lg: ($-ss-space-sm)*3;
+
+/* text */
+$-ss-text-default: 16px;
+$-ss-lineHeight-default: 32px;
+$-ss-text-sm: 12px;
+$-ss-letterSpacing: 2px;
+$-ss-defaultFontFamily: Calibri, Arial, sans-serif;

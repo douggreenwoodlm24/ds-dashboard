@@ -1,0 +1,35 @@
+{
+        "title": "Manufacturers",
+        "series01": {
+            "manufacturer": "Alcatel",
+            "manufacturerValue": "12"
+        }, 
+        "series02": {
+            "manufacturer": "Samsung",
+            "manufacturerValue": "11"
+        }, 
+        "series03": {
+            "manufacturer": "CAT",
+            "manufacturerValue": "13"
+        }, 
+        "series04": {
+            "manufacturer": "HTC",
+            "manufacturerValue": "14"
+        }, 
+        "series05": {
+            "manufacturer": "Doro",
+            "manufacturerValue": "5"
+        }, 
+        "series06": {
+            "manufacturer": "Apple",
+            "manufacturerValue": "2"
+        }, 
+        "series07": {
+            "manufacturer": "Honor",
+            "manufacturerValue": "4"
+        }, 
+        "series08": {
+            "manufacturer": "Vodafone",
+            "manufacturerValue": "8"
+        }
+    }

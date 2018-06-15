@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/img/ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>SecureSelect - Alcatel U5 Cocoa Grey</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="vendor/lightslider/css/lightslider.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- Plugin CSS -->
+        <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/sb-admin.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/ss-main.css" />
+        <link rel="stylesheet" href="css/ss-responsive.css" />
+
+    </head>
+
+    <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="logo-dataselect-container"><a class="navbar-brand" href="index.html"><img src="img/logo-dataselect.png" alt="Data Select" id="logo-ds" /></a></div>
+            <!-- RESPONSIVE SEARCH /start -->
+            <!--            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive-search" aria-controls="navbarResponsive-search" aria-expanded="false" aria-label="Toggle search">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse  ss-hide-lg ss-hide-md " id="navbarResponsive-search">
+                            Responsive search
+                        </div>-->
+
+
+
+            <!-- RESPONSIVE SEARCH /end -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav-leftitems">
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0 mr-lg-2">
+                            <div class="input-group nav-search-container">
+                                <input type="text" class="form-control ss-main-search" placeholder="Search">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-light btn-icon-gray" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                        <a class="nav-link" href="index.html">
+                            <!--                            <i class="fa fa-fw fa-dashboard"></i>-->
+                            <span class="nav-link-text">
+                                Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Catalogue">
+                        <a class="nav-link" href="productListing.html">
+                            <!--                            <i class="fa fa-fw fa-dashboard"></i>-->
+                            <span class="nav-link-text">
+                                Catalogue</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Services">
+                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                            <!--                            <i class="fa fa-fw fa-wrench"></i>-->
+                            <span class="nav-link-text">
+                                Services</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapseComponents">
+                            <li>
+                                <a href="#">Knox</a>
+                            </li>
+                            <li>
+                                <a href="#">Trade-in</a>
+                            </li>
+                            <li>
+                                <a href="#">Insurance</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Stock Feed">
+                        <a class="nav-link" href="#">
+                            <!--                            <i class="fa fa-fw fa-area-chart"></i>-->
+                            <span class="nav-link-text">
+                                Stock Feed</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item nav-border-bottom" data-toggle="tooltip" data-placement="right" title="Example Pages">
+                        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+                            <!--                            <i class="fa fa-fw fa-file"></i>-->
+                            <span class="nav-link-text">
+                                Self Service</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+                            <li>
+                                <a href="#">IMEI Report</a>
+                            </li>
+                            <li>
+                                <a href="#">Validate IMEIs</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Second nav items -->
+                    <li class="nav-item " data-toggle="tooltip" data-placement="right" title="Place Order">
+                        <div class="nav-link-title">
+                            <span class="nav-link-text ">
+                                ORDERS</span>
+                        </div>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Place Order">
+                        <a class="nav-link ss-icon-circle ss-icon-circle-green" href="#">
+                            <span class="nav-link-text">
+                                Place Order</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="View Order Status">
+                        <a class="nav-link ss-icon-circle ss-icon-circle-amber" href="#">
+                            <span class="nav-link-text">
+                                View Order Status</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-border-bottom-sm" data-toggle="tooltip" data-placement="right" title="Past Orders">
+                        <a class="nav-link ss-icon-circle ss-icon-circle-blue" href="#">
+                            <span class="nav-link-text">
+                                Past Orders</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="Place Order">
+                        <div class="nav-link-title">
+                            <span class="nav-link-text ">
+                                You are logged in as Marios Ktisti.</span>
+                        </div>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="Add Users">
+                        <a class="nav-link" href="#">
+                            <span class="nav-link-text">
+                                Add Users</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="List Users">
+                        <a class="nav-link" href="#">
+                            <span class="nav-link-text">
+                                List Users</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="Edit Companies">
+                        <a class="nav-link" href="#">
+                            <span class="nav-link-text">
+                                Edit Companies</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ss-hide-md ss-hide-lg" data-toggle="tooltip" data-placement="right" title="Log Out">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                            <span class="nav-link-text">
+                                <i class="fa fa-fw fa-sign-out"></i>
+                                Log Out
+                            </span>
+                        </a>
+                    </li>
+
+
+                </ul>
+                <!--                <ul class="navbar-nav sidenav-toggler">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center" id="sidenavToggler">
+                                            <i class="fa fa-fw fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                </ul>-->
+
+                <ul class="navbar-nav ml-auto ss-nav-right-area ss-hide-xs ss-hide-sm">
+                    <li class="nav-item nav-view-basket-container ">
+                        <a href="#"><img src="img/ico-placeorder-sm.png" alt="View Basket" class="nav-view-basket" /></a>
+                    </li>
+                    <li class="nav-item logo-secureselect-container ">
+                        <img src="img/logo-secureselect.png" alt="Data Select" id="logo-ss" />
+                    </li>
+                    <li class="nav-item dropdown ss-user-area" id="ss-nav-user-options">
+                        <a class="nav-link dropdown-toggle mr-lg-2 ss-user-area-link" href="#" id="messagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="nav-user-left">
+                                <div class="ss-icon-userimage">
+                                </div>
+                            </div>
+                            <!--                            <div class="nav-user-right">-->
+                            <span class="ss-user-name">Marios Ktisti </span><br />
+                            <span class="text-small">Admin</span>
+                            <!--                            <span class="d-lg-none">Messages
+                                                            <span class="badge badge-pill badge-primary">12 New</span>
+                                                        </span>-->
+                            <!--</div>-->
+                        </a>
+                        <div class="dropdown-menu ss-user-dropdown" aria-labelledby="messagesDropdown">
+                            <!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" href="#">
+                                <span>Add Users</span>
+                            </a>
+                            <!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" href="#">
+                                <span>List Users</span>
+                            </a>
+                            <!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" href="#">
+                                <span>Edit Companies</span>
+                            </a>
+                            <!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal">
+                                <i class="fa fa-fw fa-sign-out"></i>
+                                Log Out</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="content-wrapper">
+            <div class="container-fluid container-fluid-bootstrap">
+                <!-- Breadcrumbs -->
+                <div class="row ">
+                    <div class="col-sm-12">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">DASHBOARD</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="productListing.html">CATALOGUE</a>
+                            </li>
+                            <li class="breadcrumb-item active">ALCATEL U5</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Tabs section -->
+                <div class="container-fluid-default-page">
+                    <div class="row margin-bottom-lg">
+                        <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12">
+                            <div class="thumbnail-carousel">
+                                <ul id="lightSlider">
+                                    <li data-thumb="img/products/04-alcatel-us-01.jpg">
+                                        <img src="img/products/04-alcatel-us-01.jpg" alt="Product image" />
+                                    </li>
+                                    <li data-thumb="img/products/04-alcatel-us-02.jpg">
+                                        <img src="img/products/04-alcatel-us-02.jpg" alt="Product image" />
+                                    </li>
+                                    <li data-thumb="img/products/04-alcatel-us-03.jpg">
+                                        <img src="img/products/04-alcatel-us-03.jpg" alt="Product image" />
+                                    </li>
+                                    <li data-thumb="img/products/04-alcatel-us-04.jpg">
+                                        <img src="img/products/04-alcatel-us-04.jpg" alt="Product image" />
+                                    </li>
+                                    <li data-thumb="img/products/04-alcatel-us-05.jpg">
+                                        <img src="img/products/04-alcatel-us-05.jpg" alt="Product image" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-12 col-md-12">
+                                    <div class="pd-intro">
+                                        <h2 class="page-title">Alcatel U5 Cocoa Grey + Free Gel Skin  </h2>
+                                        <h5>Data Select Code: <strong>5044Y-2AALGB1-1</strong></h5>
+                                        <h5>Manufacturer Code: <strong>5044Y-2AALGB1-1</strong></h5>
+                                        <h5>EAN: <strong>4894461735184</strong></h5>
+                                        <p>With its beautifully textured design, flashy frame and large 5" display, Alcatel U5 is a quality entry-level smartphone that provides a comfortable viewing experience. Offering a fun and creative camera experience coupled with advanced selfie apps and advanced features like Simple Mode and Phone Guard at a highly affordable price, Alcatel U5 is the perfect choice for first time users or value-drive replacement purchases. </p>
+                                        <p><a href="#">Insurance: From &pound;3.99/month for finance</a></p>
+                                        <p class="pl-price">£68.00 <span class="text-small">(excluding VAT)</span></p>
+                                        <p class="pl-stock in-stock">In stock</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-5 col-lg-12 col-md-12">
+                                    <div class="pd-cta-area">                           
+                                        <div class=" cta-area cta-area-bluegray">
+                                            <h5>Select a Quantity</h5>
+                                            <div class="cart-quantity-button">
+                                                <input type='button' value='-' class='qtyminus btn-cart-quantity cart-quantity-down' field='quantity' />
+                                                <input class="cart-quantity-input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                                                <input type='button' value='+' class='qtyplus btn-cart-quantity cart-quantity-up' field='quantity' />  
+                                            </div>
+                                        </div>
+
+                                        <a href="#" class="btn btn-green btn-cta-fullwidth">ADD TO BASKET <img src="img/ico-placeorder-sm.png" alt="Add to basket" /></a>
+                                        <a href="#" class="btn btn-bluegray btn-cta-fullwidth btn-cta-fullwidth-text-sm"><img src="img/ico-add-to-compare-sm-blue.png" alt="Add to compare" /> <span>ADD TO COMPARE LIST</span> </a>
+                                        <a href="#" class="btn btn-bluegray btn-cta-fullwidth btn-cta-fullwidth-text-sm"><img src="img/ico-email-spec-sm-blue.png" alt="Email specification" /> <span>EMAIL SPECIFICATION</span> </a>
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-sm-12">
+                            <ul class="tabs">
+                                <li rel="tab3">Services</li>
+                                <li rel="tab2">Downloads</li>
+                                <li class="active" rel="tab1">Details</li>
+                            </ul>
+                            <div class="tab_container">
+                                <h4 class="d_active tab_drawer_heading" rel="tab1">Details</h4>
+                                <div id="tab1" class="tab_content">
+                                    <div class="row ">
+                                        <div class="col-md-6">
+                                            <div class="info-section">
+                                                <h3 class="ss-blue"><span class="feature-icon feature-icon-blue"><img src="img/ico-details-sm.png" alt="Details" class="btn-icon" /></span> Detail</h3>
+                                                <p>With its beautifully textured design, flashy frame and large 5" display, Alcatel U5 is a quality entry-level smartphone that provides a comfortable viewing experience. Offering a fun and creative camera experience coupled with advanced selfie apps and advanced features like Simple Mode and Phone Guard at a highly affordable price, Alcatel U5 is the perfect choice for first time users or value-drive replacement purchases. </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="info-section">
+                                                <button class="btn btn-bluegray float-right" id="accordion-open-all"></button>
+                                                <h3 class="ss-blue">Specification</h3>
+                                                <div id="accordion" role="tablist" aria-multiselectable="true">
+                                                    <div class="card">
+                                                        <div class="card-header" role="tab" id="card-heading-02">
+                                                            <h5 class="mb-0">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#card-collapse-02" aria-expanded="false" class="spec-accordion-title" aria-controls="card-collapse-02">
+                                                                    Display
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                        <div id="card-collapse-02" class="collapse spec-accordion-content" role="tabpanel" aria-labelledby="card-heading-02">
+                                                            <div class="card-block specs-2col">
+                                                                <table>
+                                                                    <tr>
+                                                                        <td>Screen size </td>
+                                                                        <td>curved edges and bright 5" display</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Screen technology</td>
+                                                                        <td>IPS LCD</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Pixel Density</td>
+                                                                        <td>196 ppi</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Screen resolution</td>
+                                                                        <td>480 x 854 pixels</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Touchscreen</td>
+                                                                        <td>Yes</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card">
+                                                        <div class="card-header" role="tab" id="card-heading-03">
+                                                            <h5 class="mb-0">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#card-collapse-03" aria-expanded="false" class="spec-accordion-title" aria-controls="card-collapse-03">
+                                                                    Camera
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                        <div id="card-collapse-03" class="collapse spec-accordion-content" role="tabpanel" aria-labelledby="card-heading-03">
+                                                            <div class="card-block specs-2col">
+                                                                <table>
+                                                                    <tr>
+
+
+
+                                                                        <td>Front</td>
+                                                                        <td>2 Megapixels</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Rear</td>
+                                                                        <td>5 Megapixels</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Flash type</td>
+                                                                        <td>LED</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Rear camera video quality</td>
+                                                                        <td>720p @30fps</td>
+                                                                    </tr>
+                                                                </table></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header" role="tab" id="card-heading-04">
+                                                            <h5 class="mb-0">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#card-collapse-04" aria-expanded="false" class="spec-accordion-title" aria-controls="card-collapse-04">
+                                                                    Memory
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                        <div id="card-collapse-04" class="collapse spec-accordion-content" role="tabpanel" aria-labelledby="card-heading-04">
+                                                            <div class="card-block specs-2col">
+                                                                <table>
+
+                                                                    <tr>
+                                                                        <td>Internal memory </td>
+                                                                        <td>8GB ROM + 1GB RAM Support MicroSD card</td>
+                                                                    </tr>
+
+
+
+
+                                                                    <tr>
+                                                                        <td>Processor</td>
+                                                                        <td>1.1 Ghz</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Number of cores</td>
+                                                                        <td>Quad</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Processor name</td>
+                                                                        <td>Mediatek MT6737M, quad-core Cortex-A53</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>RAM</td>
+                                                                        <td>1GB</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>External memory (Up to)</td>
+                                                                        <td>32.0  GB</td>
+                                                                    </tr>
+                                                                </table></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header" role="tab" id="card-heading-05">
+                                                            <h5 class="mb-0">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#card-collapse-05" aria-expanded="false" class="spec-accordion-title" aria-controls="card-collapse-05">
+                                                                    Battery
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                        <div id="card-collapse-05" class="collapse spec-accordion-content" role="tabpanel" aria-labelledby="card-heading-05">
+                                                            <div class="card-block specs-2col">
+                                                                <table>	
+
+
+
+                                                                    <tr>
+                                                                        <td>Capacity</td>
+                                                                        <td>2050mAh</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Charging type</td>
+                                                                        <td>Micro USB</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Talk Time (Up to)</td>
+                                                                        <td>11.0  hours</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Standby time (up to)</td>
+                                                                        <td>196.0  hours</td>
+                                                                    </tr>
+                                                                </table></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header" role="tab" id="card-heading-06">
+                                                            <h5 class="mb-0">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#card-collapse-06" aria-expanded="false" class="spec-accordion-title" aria-controls="card-collapse-06">
+                                                                    Dimensions
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                        <div id="card-collapse-06" class="collapse spec-accordion-content" role="tabpanel" aria-labelledby="card-heading-06">
+                                                            <div class="card-block specs-2col">
+                                                                <table>
+                                                                    <tr>
+                                                                        <td>Dimensions	</td>
+                                                                        <td>140.7 x 71.8 x 10 mm</td>
+                                                                    </tr>
+
+                                                                </table></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header" role="tab" id="card-heading-07">
+                                                            <h5 class="mb-0">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#card-collapse-07" aria-expanded="false" class="spec-accordion-title" aria-controls="card-collapse-07">
+                                                                    OS
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                        <div id="card-collapse-07" class="collapse spec-accordion-content" role="tabpanel" aria-labelledby="card-heading-07">
+                                                            <div class="card-block specs-2col">
+                                                                <table>
+                                                                    <tr>
+                                                                        <td>Operating System</td>
+                                                                        <td>Android Marshmallow</td>
+                                                                    </tr>
+
+                                                                </table></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header" role="tab" id="card-heading-08">
+                                                            <h5 class="mb-0">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#card-collapse-08" aria-expanded="false" class="spec-accordion-title" aria-controls="card-collapse-08">
+                                                                    Connectivity
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                        <div id="card-collapse-08" class="collapse spec-accordion-content" role="tabpanel" aria-labelledby="card-heading-08">
+                                                            <div class="card-block specs-2col">
+                                                                <table>
+                                                                    <tr>
+                                                                        <td>&nbsp;
+                                                                        </td>
+                                                                        <td>4G LTE Cat 4: 150 Mbps downlink, 50 Mbps uplink Wi-Fi 802.11b/g/n, Wi-Fi Direct Bluetooth 4.2, GPS with A-GPS Micro USB 2.0 high speed Micro SIM Dual SIM Dual Standby (optional)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Bluetooth</td>
+                                                                        <td>Yes</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Wi-Fi</td>
+                                                                        <td>Yes</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>GPS</td>
+                                                                        <td>Yes</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>3G</td>
+                                                                        <td>Yes</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Wi-Fi hotspot and tethering</td>
+                                                                        <td>Yes</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>4G</td>
+                                                                        <td>Yes</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Mobile Internet connection</td>
+                                                                        <td>Yes</td>
+                                                                    </tr>
+                                                                </table></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- #tab1 -->
+                                <h4 class="tab_drawer_heading" rel="tab2">Downloads</h4>
+                                <div id="tab2" class="tab_content">
+                                    <h2>Downloads</h2>
+                                    <p></p>
+                                </div>
+                                <!-- #tab2 -->
+                                <h4 class="tab_drawer_heading" rel="tab3">Services</h4>
+                                <div id="tab3" class="tab_content">
+                                    <h2>Services</h2>
+                                    <p></p>
+                                </div>
+                                <!-- #tab3 -->
+                            </div>
+                            <!-- .tab_container -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container-fluid -->
+        <!-- /.content-wrapper -->
+
+        <footer class="sticky-footer">
+            <div class="container">
+                <div class="text-center">
+                    <small>Copyright &copy; Data Select.</small>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
+        <!-- Logout Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Select "Logout" below if you are ready to end your current session.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="login.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+        <div class="mediaCheck"></div><!-- checks device size for jquery -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/popper/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap-slider.min.js"></script>
+        <script src="vendor/lightslider/js/lightslider.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <!--    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <script src="vendor/chart.js/Chart.min.js"></script>
+            <script src="vendor/datatables/jquery.dataTables.js"></script>
+            <script src="vendor/datatables/dataTables.bootstrap4.js"></script>-->
+
+        <!-- Custom scripts for this template -->
+        <!--    <script src="js/sb-admin.min.js"></script>-->
+        <script src="js/ss-main.js"></script>
+    </body>
+
+</html>
